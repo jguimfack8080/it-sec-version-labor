@@ -1,4 +1,4 @@
-# Implementierung eines automatisierten PGP-Schlüssel-Signaturdienstes mit SMTP-Kommunikation und Datenhaltung
+# Entwurf und Implementierung eines automatisierten PGP-Schlüssel-Signaturdienstes mit SMTP-Kommunikation und Datenhaltung
 
 Diese Anwendung ermöglicht die einfache Verwaltung von PGP-Schlüsseln über eine Webanwendung mit automatischer Signierung und Validierung.
 
@@ -32,7 +32,6 @@ Um diese Anwendung auszuführen, benötigen Sie:
 - python3-venv
 - nginx
 4. Installieren Sie die erforderlichen Python-Bibliotheken mit `pip install -r requirements.txt`.
-5. VPN Einrichtung `https://orientierung.hs-bremerhaven.de/download/Einrichtung_eines_Cisco_AnyConnect_VPN-Clients-23.pdf`
 
 
 ## Verwendung
@@ -44,6 +43,8 @@ Um diese Anwendung auszuführen, benötigen Sie:
    - `server_mail_user_password`: Das Passwort für das E-Mail-Konto, das zum Versenden von E-Mails verwendet wird.
    - `server_private_key_path`: Der Pfad zur privaten PGP-Schlüsseldatei, die für die Signierung von E-Mails verwendet wird.
    - `server_private_key_passphrase`: Das Passwort für Ihren privaten Schlüssel, das zum Signieren von Schlüsseln benötigt wird.
+   - `imap_mail_user_name`: Benutzername zur Verbindung zu imap Server
+   - `imap_mail_password`: Passwor zur Verbindung zu imap Server
 
    Führen Sie das Skript mit dem Befehl `source testscript\export_variable.sh` aus, um die Umgebungsvariablen zu setzen.
 

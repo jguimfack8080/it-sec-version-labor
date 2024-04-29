@@ -10,7 +10,8 @@ export host='mail.itsec-23.sec'
 
 #Ab Hier muss es angepasst werden
 #geben Sie das Passwort für den privaten Schlüssel ein: 
-export server_private_key_passphrase='Geben Sie Hier Das Passwort der private Schlüssel'
+#Beispiel: export server_private_key_passphrase='PrivatekeyPass'
+export server_private_key_passphrase=''
 
 #geben Sie der Username der Imap Server ein
 #Beispiel:   export imap_mail_user_name='team06'
